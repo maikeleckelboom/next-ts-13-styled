@@ -1,6 +1,6 @@
 "use client";
 
-import useStyledComponentsRegistry from "../lib/styled-components";
+import useStyledComponentsRegistry from "../../lib/styled-components";
 import { useServerInsertedHTML } from "next/navigation";
 import { ReactElement } from "react";
 
