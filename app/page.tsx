@@ -1,18 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import {useState} from "react";
 import Container from "../components/Container";
 
 export default function Home() {
 
-  const [click, setClick] = useState(false);
+    const [click, setClick] = useState(false);
 
-  function handleClick() {
-    setClick(!click)
-    console.log('sim');
-  }
+    function handleClick() {
+        setClick(!click)
+    }
 
-  return (
-  <Container background={click ? 'black' : 'red'}><button onClick={handleClick}>Clicar</button>
-  </Container>);
+    return (
+        <Container>
+            <button onClick={handleClick}>
+                {click ? "Click" : "Clicked"}
+            </button>
+        </Container>);
 }

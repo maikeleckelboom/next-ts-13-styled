@@ -2,12 +2,11 @@
 
 import styled from "styled-components";
 
-interface Props {
-    background: string;
-}
+interface Props {}
 
 const Container = styled.div<Props>`
-    background: ${props => props.background};
+  width: 1200px;
+  max-width: 100%;
 `;
 
 export default Container;
